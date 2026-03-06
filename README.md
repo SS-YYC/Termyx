@@ -25,13 +25,13 @@ To run Termyx, users will need the following:
 ## How to Download
 
 1. Go to the **Termyx releases page**.
-2. Find the latest file named `termyx_version_x.x.x`.
+2. Find the latest file named `termyx_version_x.x.x-stable`.
 3. Click the file to start the download.
 4. Once the download finishes, open your **Downloads** folder.
-5. Run `termyx_version_x.x.x` to launch **Termyx**.
+5. Run `termyx_version_x.x.x-stable` to launch **Termyx**.
 
 **Note:**  
-- The `x.x.x` in the filename represents the version number of the application (for example: `termyx_version_1.2.0`).
+- The `x.x.x` in the filename represents the version number of the application (for example: `termyx_version_1.2.0-stable`).
 
 ## Additional Notes
 
