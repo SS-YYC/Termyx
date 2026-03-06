@@ -21,3 +21,37 @@ To run Termyx, users will need the following:
 - **A terminal or command-line interface** – This could be Command Prompt, PowerShell, Terminal (macOS/Linux), or any CLI that can run Python scripts.  
 - **Basic familiarity with running Python scripts** – You should know how to navigate to the directory containing the script and execute it using `python termyx.py`.  
 - **Optional:** If users want to run multiple features simultaneously (like Stopwatch with threading), ensure Python’s standard libraries are accessible — no extra installations are required as Termyx uses built-in modules like `time`, `threading`, and `sys`.
+
+## How to Download
+
+1. Go to the **Termyx releases page**.
+2. Find the latest file named `termyx_version_x.x.x`.
+3. Click the file to start the download.
+4. Once the download finishes, open your **Downloads** folder.
+5. Run `termyx_version_x.x.x` to launch **Termyx**.
+
+**Note:**  
+- The `x.x.x` in the filename represents the version number of the application (for example: `termyx_version_1.2.0`).
+
+## Additional Notes
+
+- Termyx runs entirely in the **terminal / command line**.
+- Some features may change between versions as the app is still under development.
+- If you encounter bugs or issues, please open an **Issue** on the repository.
+- Always download the **latest release** to ensure you have the newest features and fixes.
+- Make sure **Python is correctly installed and added to your system PATH** before running the program.
+
+---
+
+## Versioning
+
+Termyx uses **semantic-style versioning**:
+
+`MAJOR.MINOR.PATCH`
+
+**Example:**  
+`1.2.0`
+
+- **MAJOR** – Major changes or large new features
+- **MINOR** – Smaller feature additions or improvements
+- **PATCH** – Bug fixes and minor adjustments
