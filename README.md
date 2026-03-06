@@ -27,10 +27,11 @@ To run Termyx, users will need the following:
 ## How to Download
 
 1. Go to the **Termyx releases page**.
-2. Find the latest file named `termyx_version_x.x.x-stable`.
-3. Click the file to start the download.
-4. Open your preferred terminal or command line interface and navigate to the folder containing the `termyx_version_x.x.x-stable` file.
-5. Run `python termyx_version_x.x.x-stable` in your terminal window and follow the on-screen instructions.
+2. Find the latest release.
+3. Download the `Termyx v.x.x.x.zip` folder.
+4. Extract the `.zip` file to a location of your choice.
+5. Open your preferred terminal or command line interface and navigate to the folder containing the `termyx_version_x.x.x-stable` file.
+6. Run `python termyx_version_x.x.x-stable` in your terminal window and follow the on-screen instructions.
 
 **Note:**  
 - The `x.x.x` in the filename represents the version number of the application (for example: `termyx_version_1.2.0-stable`).
