@@ -55,3 +55,21 @@ Termyx uses **semantic-style versioning**:
 - **MAJOR** – Major changes or large new features
 - **MINOR** – Smaller feature additions or improvements
 - **PATCH** – Bug fixes and minor adjustments
+
+---
+
+## License
+
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
+
+This means you are free to:
+
+- Use the software
+- Modify the source code
+- Distribute copies
+- Distribute modified versions
+
+However, any redistributed or modified versions **must also be licensed under GPL-3.0** and include the original license.
+
+For full details, see the `LICENSE` file included in this repository or read the license here:  
+https://www.gnu.org/licenses/gpl-3.0.en.html
