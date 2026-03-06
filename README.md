@@ -1,5 +1,7 @@
 # Termyx - Multi-Function CLI App
 
+If you like what you see, consider joining the Discord Server at this link: https://discord.gg/eJqdyjRv
+
 **Termyx** is a lightweight, all-in-one command-line interface (CLI) application designed for quick, practical tasks directly from your terminal. Built with Python, Termyx offers a suite of tools for everyday productivity and learning exercises, all wrapped in a fun, retro-inspired interface.  
 
 ## Features
