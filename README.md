@@ -1,5 +1,7 @@
 # Termyx - Multi-Function CLI App
 
+The app is currently on Version 1.3.0.
+
 If you like what you see, consider joining the Discord Server at this link: https://discord.gg/eJqdyjRv
 
 **Termyx** is a lightweight, all-in-one command-line interface (CLI) application designed for quick, practical tasks directly from your terminal. Built with Python, Termyx offers a suite of tools for everyday productivity and learning exercises, all wrapped in a fun, retro-inspired interface.  
@@ -8,7 +10,8 @@ If you like what you see, consider joining the Discord Server at this link: http
 - **Stopwatch** – Track elapsed time with start, stop, and reset commands.  
 - **Timer** – Set a countdown timer in seconds, perfect for short tasks or exercises.  
 - **Counter** – Count up or down with custom intervals and delays.  
-- **Calculator** – Perform basic arithmetic operations (+, -, *, /) quickly.  
+- **Calculator** – Perform basic arithmetic operations (+, -, *, /) quickly.
+- **Tally Counter** – Keep track of counts by pressing enter to increment the total.  
 - **Easy Navigation** – Choose a tool, perform tasks, and return to the directory with simple prompts.  
 - **Interactive CLI** – Friendly input prompts with validation and “do again?” options for repeated tasks.  
 
@@ -40,7 +43,7 @@ To run Termyx, users will need the following:
 
 - Termyx runs entirely in the **terminal / command line**.
 - Some features may change between versions as the app is still under development.
-- If you encounter bugs or issues, please open an **Issue** on the repository.
+- If you encounter bugs or issues, please open an **Issue** on the repository or create a forum post on the Discord server.
 - Always download the **latest release** to ensure you have the newest features and fixes.
 - Make sure **Python is correctly installed and added to your system PATH** before running the program.
 
