@@ -1,6 +1,6 @@
 # Termyx - Multi-Function CLI App
 
-The app is currently on Version 1.3.1.
+The app is currently on Version 1.3.2.
 
 If you like what you see, consider joining the Discord Server at this link: https://discord.gg/eJqdyjRv
 
@@ -11,7 +11,8 @@ If you like what you see, consider joining the Discord Server at this link: http
 - **Timer** – Set a countdown timer in seconds, perfect for short tasks or exercises.  
 - **Counter** – Count up or down with custom intervals and delays.  
 - **Calculator** – Perform basic arithmetic operations (+, -, *, /) quickly.
-- **Tally Counter** – Keep track of counts by pressing enter to increment the total.  
+- **Tally Counter** – Keep track of counts by pressing enter to increment the total.
+- **System Stats** – Track your CPU and RAM usage, updated to the nearest second.  
 - **Easy Navigation** – Choose a tool, perform tasks, and return to the directory with simple prompts.  
 - **Interactive CLI** – Friendly input prompts with validation and “do again?” options for repeated tasks.  
 
