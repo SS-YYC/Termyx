@@ -9,12 +9,13 @@ If you like what you see, consider joining the Discord Server at this link: http
 ## Features
 - **Stopwatch** – Track elapsed time with start, stop, and reset commands.
 - **Timer** – Set a countdown timer in seconds, or use interval mode to count down from a starting number to an end number with a custom step and delay.
-- **Calculator** – Perform basic arithmetic operations (+, -, *, /) quickly.
+- **Calculator** – Perform basic arithmetic operations (+, -, *, /, **) quickly, including exponents.
 - **Tally Counter** – Keep track of counts by pressing Enter to increment the total.
-- **System Stats** – Monitor your CPU and RAM usage in real time, updated every second.
+- **System Stats** – Monitor your CPU and RAM usage in real time, updated every 0.5 seconds.
 - **Random Number Generator** – Generate a random whole number between two specified limits.
 - **Easy Navigation** – Choose a tool, perform tasks, and return to the directory with simple prompts.
 - **Interactive CLI** – Friendly input prompts with validation and "do again?" options for repeated tasks.
+- **Help Command** – Type `help` or `h` at the startup prompt to view available tools and support links.
 
 ## Why Termyx?
 Termyx is perfect for learners, coders, and anyone who wants quick, reliable CLI utilities without leaving the terminal. Its modular design makes it easy to extend or modify for personal needs.
@@ -38,9 +39,9 @@ To run Termyx, you will need the following:
 As of version 1.4.0, Termyx is organized into a modular folder structure:
 
 ```
-termyx/
+Version_1.4.0-stable/
 ├── main.py
-└── tools/
+└── Tools/
     ├── __init__.py
     ├── timer.py
     ├── stopwatch.py
@@ -50,7 +51,7 @@ termyx/
     └── rng.py
 ```
 
-`main.py` is the entry point for the app. Each tool lives in its own file inside the `tools/` folder.
+`main.py` is the entry point for the app. Each tool lives in its own file inside the `Tools/` folder.
 
 ## How to Download
 
@@ -58,7 +59,7 @@ termyx/
 2. Find the latest release.
 3. Download the `Termyx v.x.x.x.zip` folder.
 4. Extract the `.zip` file to a location of your choice.
-5. Open your preferred terminal or command-line interface and navigate to the extracted folder.
+5. Open your preferred terminal or command-line interface and navigate to the `Version_x.x.x-stable` folder inside the extracted zip.
 6. Install dependencies:
    ```
    pip install psutil
@@ -69,12 +70,12 @@ termyx/
    ```
 
 **Note:**  
-The `x.x.x` in the filename represents the version number of the application (for example: `Termyx v.1.4.0.zip`).
+The `x.x.x` in the filename represents the version number of the application (for example: `Version_1.4.0-stable.zip`).
 
 ## Additional Notes
 
 - Termyx runs entirely in the **terminal / command line**.
-- Make sure you have all dependencies installed before using the app.
+- Some features may change between versions as the app is still under development.
 - If you encounter bugs or issues, please open an **Issue** on the repository or create a forum post on the Discord server.
 - Always download the **latest release** to ensure you have the newest features and fixes.
 - Make sure **Python is correctly installed and added to your system PATH** before running the program.
