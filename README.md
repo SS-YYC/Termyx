@@ -74,7 +74,7 @@ The `x.x.x` in the filename represents the version number of the application (fo
 ## Additional Notes
 
 - Termyx runs entirely in the **terminal / command line**.
-- Some features may change between versions as the app is still under development.
+- Make sure you have all dependencies installed before using the app.
 - If you encounter bugs or issues, please open an **Issue** on the repository or create a forum post on the Discord server.
 - Always download the **latest release** to ensure you have the newest features and fixes.
 - Make sure **Python is correctly installed and added to your system PATH** before running the program.
