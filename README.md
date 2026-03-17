@@ -2,7 +2,7 @@
 
 The app is currently on Version 1.7.0.
 
-If you like what you see, consider joining the Discord Server at this link: https://discord.gg/eJqdyjRv
+If you like what you see, consider joining the Discord Server at this link: https://discord.gg/GxPxfjGAef
 
 **Termyx** is a lightweight, all-in-one command-line interface (CLI) application designed for quick, practical tasks directly from your terminal. Built with Python, Termyx offers a suite of tools for everyday productivity and learning exercises, all wrapped in a fun, retro-inspired interface.
 
