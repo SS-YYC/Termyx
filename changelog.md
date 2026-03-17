@@ -5,6 +5,7 @@
   • The countdown timer now accepts minutes instead of seconds, supporting decimal values (e.g. 1.5 for 90 seconds).
   • The countdown display has been updated to show a live MM:SS readout, consistent with the new Pomodoro Timer.
 - Launch scripts have been added to the release zip:
+
   • `termyx.bat` for Windows users — double-click to launch without opening a terminal.
   • `termyx.sh` for macOS and Linux users — run `./termyx.sh` in your terminal.
 
