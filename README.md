@@ -38,10 +38,10 @@ To run Termyx, you will need the following:
 
 ## File Structure
 
-As of version 1.7.0, Termyx is organized into a modular folder structure:
+As of version 1.7.1, Termyx is organized into a modular folder structure:
 
 ```
-Version_1.7.0-stable/
+Version_1.7.1-stable/
 ├── termyx.bat
 ├── termyx.sh
 └── Termyx/
@@ -78,7 +78,7 @@ Version_1.7.0-stable/
    - **Any platform** — navigate into the `Termyx/` folder and run `python main.py`
 
 **Note:**  
-The `x.x.x` in the filename represents the version number of the application (for example: `Version_1.7.0-stable.zip`).
+The `x.x.x` in the filename represents the version number of the application (for example: `Version_1.7.1-stable.zip`).
 
 ## Additional Notes
 
@@ -97,7 +97,7 @@ Termyx uses **semantic-style versioning**:
 `MAJOR.MINOR.PATCH`
 
 **Example:**  
-`1.7.0`
+`1.7.1`
 
 - **MAJOR** – Major changes or large new features
 - **MINOR** – Smaller feature additions or improvements
