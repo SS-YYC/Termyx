@@ -108,6 +108,10 @@ Termyx uses **semantic-style versioning**:
 - **PATCH** – Bug fixes and minor adjustments
 
 ---
+## Contributing
+
+If you'd like to work on Termyx, read `CONTRIBUTING.md` to view guidelines on how to add new features.
+---
 
 ## License
 
