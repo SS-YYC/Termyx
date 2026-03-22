@@ -16,7 +16,9 @@ If you like what you see, consider joining the Discord Server at this link: http
 - **Dice Roller** – Roll virtual dice with customizable sides and quantities.
 - **Unit Converter** – Convert between units of length, mass, and temperature.
 - **Pomodoro Timer** – Set customizable work and break intervals based on the Pomodoro Technique.
-- **Easy Navigation** – Choose a tool, perform tasks, and return to the directory with simple prompts.
+- **Coin Flip** – Flip a virtual coin with a spinner animation.
+- **Colour-coded output** – Colour coded text across all tools for a more polished experience.
+- **Easy Navigation** – Choose a tool, perform tasks, and return to the directory automatically.
 - **Interactive CLI** – Friendly input prompts with validation and "do again?" options for repeated tasks.
 - **Help Command** – Type `help` or `h` at the startup prompt to view available tools and support links.
 
@@ -38,10 +40,10 @@ To run Termyx, you will need the following:
 
 ## File Structure
 
-As of version 1.7.2, Termyx is organized into a modular folder structure:
+As of version 1.8.0, Termyx is organized into a modular folder structure:
 
 ```
-Version_1.7.2-stable/
+Version_1.8.0-stable/
 ├── termyx.bat
 ├── termyx.sh
 └── Termyx/
@@ -49,6 +51,7 @@ Version_1.7.2-stable/
     ├── changelog.md
     └── Tools/
         ├── __init__.py
+        ├── colours.py
         ├── timer.py
         ├── stopwatch.py
         ├── calculator.py
@@ -57,7 +60,8 @@ Version_1.7.2-stable/
         ├── rng.py
         ├── dice.py
         ├── unit_conv.py
-        └── pom_tmr.py
+        ├── pom_tmr.py
+        └── coin_flip.py
 ```
 
 `main.py` is the entry point for the app. Each tool lives in its own file inside the `Tools/` folder. `termyx.bat` and `termyx.sh` are launch scripts for Windows and macOS/Linux respectively.
@@ -78,7 +82,7 @@ Version_1.7.2-stable/
    - **Any platform** — navigate into the `Termyx/` folder and run `python main.py`
 
 **Note:**  
-The `x.x.x` in the filename represents the version number of the application (for example: `Version_1.7.2-stable.zip`).
+The `x.x.x` in the filename represents the version number of the application (for example: `Version_1.8.0-stable.zip`).
 
 ## Additional Notes
 
@@ -97,7 +101,7 @@ Termyx uses **semantic-style versioning**:
 `MAJOR.MINOR.PATCH`
 
 **Example:**  
-`1.7.2`
+`1.8.0`
 
 - **MAJOR** – Major changes or large new features
 - **MINOR** – Smaller feature additions or improvements
