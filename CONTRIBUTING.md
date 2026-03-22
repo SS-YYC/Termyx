@@ -148,5 +148,5 @@ Update the version number in the splash screen in `main.py` with every release.
 
 ## Questions or Contributions
 
-- 💬 [Join the Discord Server](https://discord.gg/GxPxfjGAef)
-- 🐛 [Open an Issue on GitHub](https://github.com/SS-YYC/Termyx)
+- [Join the Discord Server](https://discord.gg/GxPxfjGAef)
+- [Open an Issue on GitHub](https://github.com/SS-YYC/Termyx)
