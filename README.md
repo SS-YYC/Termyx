@@ -1,6 +1,6 @@
 # Termyx - Multi-Function CLI App
 
-The app is currently on Version 1.8.0.
+The app is currently on Version 1.8.1.
 
 If you like what you see, consider joining the Discord Server at this link: https://discord.gg/GxPxfjGAef
 
@@ -11,12 +11,12 @@ If you like what you see, consider joining the Discord Server at this link: http
 - **Timer** – Set a countdown timer in minutes, or use interval mode to count down from a starting number to an end number with a custom step and delay.
 - **Calculator** – Perform arithmetic operations (+, -, *, /, **, //, √, %) including exponents, floor division, square root, and percentage.
 - **Tally Counter** – Keep track of counts by pressing Enter to increment the total.
-- **System Stats** – Monitor your CPU, RAM, disk usage, battery, and the current date and time in real time.
+- **System Monitor** – Monitor your CPU, RAM, disk usage, battery, and the current date and time in real time.
 - **Random Number Generator** – Generate a random whole number between two specified limits, including negative numbers.
 - **Dice Roller** – Roll virtual dice with customizable sides and quantities.
 - **Unit Converter** – Convert between units of length, mass, and temperature.
 - **Pomodoro Timer** – Set customizable work and break intervals based on the Pomodoro Technique.
-- **Coin Flip** – Flip a virtual coin with a spinner animation.
+- **Coin Flipper** – Flip a virtual coin with a spinner animation.
 - **Colour-coded output** – Colour coded text across all tools for a more polished experience.
 - **Easy Navigation** – Choose a tool, perform tasks, and return to the directory automatically.
 - **Interactive CLI** – Friendly input prompts with validation and "do again?" options for repeated tasks.
@@ -40,10 +40,10 @@ To run Termyx, you will need the following:
 
 ## File Structure
 
-As of version 1.8.0, Termyx is organized into a modular folder structure:
+As of version 1.8.1, Termyx is organized into a modular folder structure:
 
 ```
-Version_1.8.0-stable/
+Version_1.8.1-stable/
 ├── termyx.bat
 ├── termyx.sh
 └── Termyx/
@@ -56,7 +56,7 @@ Version_1.8.0-stable/
         ├── stopwatch.py
         ├── calculator.py
         ├── tally.py
-        ├── system_stats.py
+        ├── system_monitor.py
         ├── rng.py
         ├── dice.py
         ├── unit_conv.py
@@ -82,7 +82,7 @@ Version_1.8.0-stable/
    - **Any platform** — navigate into the `Termyx/` folder and run `python main.py`
 
 **Note:**  
-The `x.x.x` in the filename represents the version number of the application (for example: `Version_1.8.0-stable.zip`).
+The `x.x.x` in the filename represents the version number of the application (for example: `Version_1.8.1-stable.zip`).
 
 ## Additional Notes
 
@@ -101,17 +101,11 @@ Termyx uses **semantic-style versioning**:
 `MAJOR.MINOR.PATCH`
 
 **Example:**  
-`1.8.0`
+`1.8.1`
 
 - **MAJOR** – Major changes or large new features
 - **MINOR** – Smaller feature additions or improvements
 - **PATCH** – Bug fixes and minor adjustments
-
----
-
-## Contributing
-
-If you'd like to work on Termyx, read `CONTRIBUTING.md` to view guidelines on how to add new features.
 
 ---
 
