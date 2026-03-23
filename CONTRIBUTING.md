@@ -20,7 +20,7 @@ Version_x.x.x-stable/
         ├── stopwatch.py
         ├── calculator.py
         ├── tally.py
-        ├── system_stats.py
+        ├── system_monitor.py
         ├── rng.py
         ├── dice.py
         ├── unit_conv.py
@@ -116,7 +116,7 @@ Accept both `y` and `yes`. The `break` exits the `while True` loop and returns c
 
 ## Threading
 
-Tools that run background processes (stopwatch, system stats) use Python's `threading` module. Key things to keep in mind:
+Tools that run background processes (stopwatch, system monitor) use Python's `threading` module. Key things to keep in mind:
 
 - Always use `daemon=True` when creating threads so they don't block the app from exiting
 - Use a global `running` or `monitor_running` flag to control the thread loop
@@ -129,7 +129,7 @@ Tools that run background processes (stopwatch, system stats) use Python's `thre
 Termyx targets **Windows 10+** primarily but should work on macOS and Linux. Keep these in mind:
 
 - ANSI colour codes are enabled on Windows via `os.system("")` in `main.py` — do not remove this
-- Avoid hardcoding Windows-specific paths. Use `os.name != 'nt'` checks where needed (see `system_stats.py` for an example)
+- Avoid hardcoding Windows-specific paths. Use `os.name != 'nt'` checks where needed (see `system_monitor.py` for an example)
 - The `\a` beep character may be silent on some macOS/Linux terminals — this is expected behaviour
 
 ---
