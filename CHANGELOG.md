@@ -1,22 +1,12 @@
-# Added in Version 1.8.0:
+# Fixed in Version 1.8.1:
 
-- A new Coin Flip tool has been added, allowing users to flip a virtual coin with a spinner animation.
-- Coloured text has been added across the app - see below. This should work across all operating systems.
-
-### Colour Guide
-
-- Yellow — headers, welcome messages, navigation hints and interruption messages.
-- Red — errors and invalid input.
-- Green — successful results and positive outcomes.
-- Cyan — live values and active displays.
-- No colour — conversational prompts and neutral messages.
-
-## Bug Fixes and Scripting Improvements:
-
-- The Pomodoro Timer's 3 second countdown is now dynamic, counting down visually instead of showing a static message.
-- A missing comma in valid_commands caused the Pomodoro Timer shorthand to silently break. This has been fixed.
-- The Pomodoro Timer now displays a productivity summary at the end of a session, showing total time spent working and on breaks.
-- Fixed a crash message that occurred when hitting CTRL + C in the Pomodoro Timer.
-- Splash screen and intro sequence overhaul.
-- Changes to user flow and sequencing across the app.
-- Code optimizations across various parts of the app.
+- The Pomodoro Timer productivity summary now correctly calculates the number of short and long breaks taken.
+- The stopwatch elapsed display now resets visually when the reset command is used.
+- The calculator's operation input is now stripped of whitespace once on entry, removing redundant processing.
+- A redundant condition in the calculator's exponentiation logic has been removed.
+- The RNG negative numbers note now only displays once per session instead of repeating on every roll.
+- System Stats has been renamed to System Monitor universally across the app.
+- The Coin Flip tool has been renamed to Coin Flipper universally.
+- The Pomodoro Timer work period display message has been improved.
+- Deprecated os module functions removed.
+- Code optimization and formatting improvements.
