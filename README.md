@@ -19,36 +19,7 @@ If you like what you see, consider joining the Discord Server at this link: http
 - **Coin Flipper** - Flip a virtual coin.
 - **Desktop shortcut setup** - Use `shortcut.bat` on Windows to create a desktop shortcut for Termyx.
 - **Colour-coded output** - Colour-coded text across all tools for a more polished experience.
-- **Improved navigation** - The main directory separates commands from tools and supports direct access to `changelog (cl)` and `help (h)`.
 - **Interactive CLI** - Friendly input prompts with validation and tailored "again?" prompts for repeated tasks.
-
-## What's New In 1.9.0?
-
-### New Features
-- A Windows shortcut flow has been added with `shortcut.bat`, `setup.ps1`, and `termyx.ico`.
-- Stopwatch lap recording has been added with the `lap (l)` command.
-- Lap times are now displayed when the stopwatch closes.
-- Stopwatch command shorthands are now supported: `start (s)` | `stop (st)` | `reset (r)` | `lap (l)` | `quit (q)`.
-- `q` is now supported as a shorthand for `quit` in both System Monitor and Tally Counter.
-
-### App Improvements
-- Stopwatch time is now displayed in `MM:SS` format instead of raw seconds.
-- System Monitor now refreshes every 0.25 seconds instead of 0.5 seconds.
-- The app now shows a time-of-day greeting on launch.
-- The opening banner includes that greeting directly.
-- Intro lines across tools have been rewritten to feel more personal and tool-specific.
-- Again prompts across tools have been updated to better match each tool.
-- When the changelog or help text is opened at startup, the app now waits for Enter before continuing to the directory.
-
-### Scripting Improvements
-- Unnecessary `ValueError` handling has been removed from the main directory loop.
-- Command routing in `main.py` has been expanded to support the central `changelog` and `help` commands.
-- Minor flow and formatting improvements have been made across the app.
-
-### Bug Fixes
-- `os.system("")` has been restored in `main.py` to re-enable ANSI colour handling on Windows Command Prompt.
-- Stopwatch reset output now stays consistent with the new `MM:SS` display format.
-- Naming remains consistent across the app, including `System Monitor` and `Coin Flipper`.
 
 ## Why Termyx?
 Termyx is perfect for learners, coders, and anyone who wants quick, reliable CLI utilities without leaving the terminal. Its modular design makes it easy to extend or modify for personal needs.
