@@ -1,6 +1,6 @@
 # Termyx - Multi-Function CLI App
 
-The app is currently on Version 1.9.1.
+The app is currently on Version 1.9.2.
 
 If you like what you see, consider joining the Discord Server at this link: https://discord.gg/GxPxfjGAef
 
@@ -22,6 +22,7 @@ If you like what you see, consider joining the Discord Server at this link: http
 - **Improved navigation** - The main directory separates commands from tools and supports direct access to `changelog (cl)` and `help (h)`.
 - **Interactive CLI** - Friendly input prompts with validation and tailored "again?" prompts for repeated tasks.
 
+
 ## Why Termyx?
 Termyx is perfect for learners, coders, and anyone who wants quick, reliable CLI utilities without leaving the terminal. Its modular design makes it easy to extend or modify for personal needs.
 
@@ -40,10 +41,10 @@ To run Termyx, you will need the following:
 
 ## File Structure
 
-As of version 1.9.1, Termyx is organized into a modular folder structure:
+As of version 1.9.2, Termyx is organized into a modular folder structure:
 
 ```text
-Version_1.9.1-stable/
+Version_1.9.2-stable/
 |-- setup.ps1
 |-- shortcut.bat
 |-- termyx.bat
@@ -104,7 +105,7 @@ Termyx uses **semantic-style versioning**:
 `MAJOR.MINOR.PATCH`
 
 **Example:**  
-`1.9.1`
+`1.9.2`
 
 - **MAJOR** - Major changes or large new features
 - **MINOR** - Smaller feature additions or improvements
@@ -125,5 +126,4 @@ However, any redistributed or modified versions **must also be licensed under GP
 
 For full details, see the `LICENSE` file included in this repository or read the license here:  
 https://www.gnu.org/licenses/gpl-3.0.en.html
-
 
