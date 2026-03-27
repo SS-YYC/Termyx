@@ -1,6 +1,6 @@
 # Termyx - Multi-Function CLI App
 
-The app is currently on Version 1.9.0.
+The app is currently on Version 1.9.1.
 
 If you like what you see, consider joining the Discord Server at this link: https://discord.gg/GxPxfjGAef
 
@@ -19,6 +19,7 @@ If you like what you see, consider joining the Discord Server at this link: http
 - **Coin Flipper** - Flip a virtual coin.
 - **Desktop shortcut setup** - Use `shortcut.bat` on Windows to create a desktop shortcut for Termyx.
 - **Colour-coded output** - Colour-coded text across all tools for a more polished experience.
+- **Improved navigation** - The main directory separates commands from tools and supports direct access to `changelog (cl)` and `help (h)`.
 - **Interactive CLI** - Friendly input prompts with validation and tailored "again?" prompts for repeated tasks.
 
 ## Why Termyx?
@@ -39,10 +40,10 @@ To run Termyx, you will need the following:
 
 ## File Structure
 
-As of version 1.9.0, Termyx is organized into a modular folder structure:
+As of version 1.9.1, Termyx is organized into a modular folder structure:
 
 ```text
-Version_1.9.0-stable/
+Version_1.9.1-stable/
 |-- setup.ps1
 |-- shortcut.bat
 |-- termyx.bat
@@ -103,7 +104,7 @@ Termyx uses **semantic-style versioning**:
 `MAJOR.MINOR.PATCH`
 
 **Example:**  
-`1.9.0`
+`1.9.1`
 
 - **MAJOR** - Major changes or large new features
 - **MINOR** - Smaller feature additions or improvements
