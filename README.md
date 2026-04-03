@@ -1,19 +1,19 @@
 # Termyx - Multi-Function CLI App
 
-The app is currently on Version 1.10.0.
+The app is currently on Version 1.10.1.
 
 If you like what you see, consider joining the Discord Server at this link: https://discord.gg/GxPxfjGAef
 
 **Termyx** is a lightweight, all-in-one command-line interface (CLI) application designed for quick, practical tasks directly from your terminal. Built with Python, Termyx offers a suite of tools for everyday productivity and learning exercises, all wrapped in a fun, retro-inspired interface.
 
-## What's New in 1.10.0
+## What's New in 1.10.1
 
-- **Theme selection** - Choose from `default`, `ocean`, `ember`, `neon`, or `monochrome`, and save your preferred theme in `config.json`.
-- **Release update check** - Termyx can notify you on startup when a newer GitHub release is available.
-- **Rewritten calculator** - The calculator now supports full one-line expressions with brackets, functions, and constants.
-- **Optional system monitor dependency** - `psutil` is no longer required to run the app itself. If it is not installed, only the System Monitor tool is hidden or disabled.
-- **Improved startup flow** - Help and changelog screens display more clearly, and startup messaging has been cleaned up.
-- **Encoding and text cleanup** - Source files and release text have been cleaned up for better consistency and compatibility.
+- **New themes** - Added `forest`, `amber`, and `dracula` alongside the existing built-in themes.
+- **Settings menu** - Theme selection and Pomodoro defaults now live in a dedicated settings screen accessible from the directory.
+- **Persistent per-user settings** - Theme and Pomodoro preferences are now saved in a per-user config location so they survive app updates.
+- **Per-tool terminal titles** - The terminal tab title updates to match the active tool and resets when returning to the directory.
+- **Improved update notices** - Startup update messages now compare versions more safely and show the latest available version directly.
+- **Prompt consistency** - Repeat prompts across the tools now use a consistent `(Y/n)` format.
 
 ## Features
 - **Stopwatch** - Track elapsed time with start, stop, reset, and lap commands.
@@ -27,12 +27,13 @@ If you like what you see, consider joining the Discord Server at this link: http
 - **Pomodoro Timer** - Run customizable work and break sessions based on the Pomodoro Technique.
 - **Coin Flipper** - Flip a virtual coin with a simple spinner animation.
 - **Theme Selection** - Personalize Termyx with multiple built-in colour themes.
+- **Settings Menu** - Manage theme selection and saved Pomodoro defaults in one place.
 - **Desktop shortcut setup** - Use the included Windows scripts to launch Termyx or create a desktop shortcut.
 - **Interactive CLI flow** - Friendly prompts, validation, and tailored rerun prompts across tools.
 
 ## Calculator Functions
 
-The `1.10.0` calculator supports:
+The `1.10.1` calculator supports:
 
 - Operators: `+`, `-`, `*`, `/`, `**`, `//`, `%`
 - Functions: `abs()`, `round()`, `sqrt()`, `log()`, `ln()`, `sin()`, `cos()`, `tan()`
@@ -41,15 +42,20 @@ The `1.10.0` calculator supports:
 
 ## Themes
 
-Termyx includes five built-in themes:
+Termyx includes eight built-in themes:
 
 - `default` - The classic Termyx experience. Warm and familiar.
 - `ocean` - Cool blues and greens. Easy on the eyes.
 - `ember` - Reds and warm tones. Bold and intense.
 - `neon` - Bright magentas and cyans. High contrast and vibrant.
 - `monochrome` - No colour distractions. Clean and minimal.
+- `forest` - Deep greens and earthy tones. Calm and grounded.
+- `amber` - Warm ambers and whites. Retro and nostalgic.
+- `dracula` - Purples and greens. Dark and mysterious.
 
-Your selected theme is stored in `Termyx/config.json` after you choose one in the app.
+Your selected theme and saved Pomodoro defaults are stored in a per-user config file. On Windows, this is typically:
+
+`C:\Users\<you>\AppData\Roaming\Termyx\config.json`
 
 
 ## Why Termyx?
@@ -74,10 +80,10 @@ pip install psutil
 
 ## File Structure
 
-As of version `1.10.0`, Termyx uses the following layout:
+As of version `1.10.1`, Termyx uses the following layout:
 
 ```text
-Version_1.10.0-stable/
+Version_1.10.1-stable/
 |-- setup.ps1
 |-- shortcut.bat
 |-- termyx.bat
@@ -86,16 +92,17 @@ Version_1.10.0-stable/
 `-- Termyx/
     |-- README.md
     |-- changelog.md
-    |-- config.json
     |-- main.py
     `-- Tools/
         |-- __init__.py
         |-- calculator.py
         |-- coin_flip.py
         |-- colours.py
+        |-- config_store.py
         |-- dice.py
         |-- pom_tmr.py
         |-- rng.py
+        |-- settings.py
         |-- stopwatch.py
         |-- system_monitor.py
         |-- tally.py
@@ -108,14 +115,15 @@ Notes:
 
 - `main.py` is the app entry point.
 - Each tool lives in its own module inside `Tools/`.
-- `config.json` is created or updated when a theme is saved.
+- `config_store.py` manages the per-user config path and migration from older in-folder settings.
+- `settings.py` manages the settings menu, theme selection, and Pomodoro defaults.
 - `termyx.bat` and `termyx.sh` are launcher scripts.
 - `setup.ps1` and `shortcut.bat` support Windows setup and shortcut creation.
 
 ## How to Download
 
 1. Go to the **Termyx releases page**.
-2. Download the latest `Version_1.10.0-stable.zip` release.
+2. Download the latest `Version_1.10.1-stable.zip` release.
 3. Extract the archive to a location of your choice.
 4. Optionally install `psutil` if you want the System Monitor tool:
 
@@ -139,8 +147,9 @@ chmod +x termyx.sh
 ## Additional Notes
 
 - Termyx runs entirely in the terminal.
-- The terminal tab title is set to `Termyx` on startup.
-- On startup, the app can show update availability based on the latest GitHub release.
+- The terminal tab title is set to `Termyx` in the directory and updates to match the active tool when launched.
+- On startup, the app can show update availability based on the latest GitHub release and display the newest available version.
+- Theme and Pomodoro settings are remembered between releases through the per-user config file.
 - If you encounter bugs or issues, please open an Issue on the repository or post in the Discord server.
 - Always download the latest release to get the newest features and fixes.
 
@@ -151,7 +160,7 @@ Termyx uses semantic-style versioning:
 `MAJOR.MINOR.PATCH`
 
 Example:
-`1.10.0`
+`1.10.1`
 
 - **MAJOR** - Larger structural changes or major new features
 - **MINOR** - New tools, improvements, or visible feature upgrades
