@@ -1,13 +1,14 @@
 # Termyx - Multi-Function CLI App
 
-The app is currently on Version 1.10.1.
+The app is currently on Version 1.10.2.
 
 If you like what you see, consider joining the Discord Server at this link: https://discord.gg/GxPxfjGAef
 
 **Termyx** is a lightweight, all-in-one command-line interface (CLI) application designed for quick, practical tasks directly from your terminal. Built with Python, Termyx offers a suite of tools for everyday productivity and learning exercises, all wrapped in a fun, retro-inspired interface.
 
-## What's New in 1.10.1
+## What's New in 1.10.2
 
+- **Stable release labeling fix** - The app now correctly identifies this build as `1.10.2` in the startup banner and version check.
 - **New themes** - Added `forest`, `amber`, and `dracula` alongside the existing built-in themes.
 - **Settings menu** - Theme selection and Pomodoro defaults now live in a dedicated settings screen accessible from the directory.
 - **Persistent per-user settings** - Theme and Pomodoro preferences are now saved in a per-user config location so they survive app updates.
@@ -33,7 +34,7 @@ If you like what you see, consider joining the Discord Server at this link: http
 
 ## Calculator Functions
 
-The `1.10.1` calculator supports:
+The `1.10.2` calculator supports:
 
 - Operators: `+`, `-`, `*`, `/`, `**`, `//`, `%`
 - Functions: `abs()`, `round()`, `sqrt()`, `log()`, `ln()`, `sin()`, `cos()`, `tan()`
@@ -80,10 +81,10 @@ pip install psutil
 
 ## File Structure
 
-As of version `1.10.1`, Termyx uses the following layout:
+As of version `1.10.2`, Termyx uses the following layout:
 
 ```text
-Version_1.10.1-stable/
+Version_1.10.2-stable/
 |-- setup.ps1
 |-- shortcut.bat
 |-- termyx.bat
@@ -123,7 +124,7 @@ Notes:
 ## How to Download
 
 1. Go to the **Termyx releases page**.
-2. Download the latest `Version_1.10.1-stable.zip` release.
+2. Download the latest `Version_1.10.2-stable.zip` release.
 3. Extract the archive to a location of your choice.
 4. Optionally install `psutil` if you want the System Monitor tool:
 
@@ -160,7 +161,7 @@ Termyx uses semantic-style versioning:
 `MAJOR.MINOR.PATCH`
 
 Example:
-`1.10.1`
+`1.10.2`
 
 - **MAJOR** - Larger structural changes or major new features
 - **MINOR** - New tools, improvements, or visible feature upgrades
