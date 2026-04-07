@@ -88,6 +88,7 @@ pip install psutil
 ```
 
 > **Note:** Termyx has been developed and tested primarily on **Windows 10+**. It should also work on macOS and Linux, but those platforms have not been tested as extensively.
+
 > **Note:** If `psutil` is not installed, the rest of the app still works normally.
 
 ## File Structure
