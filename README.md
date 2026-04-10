@@ -1,19 +1,11 @@
 # Termyx - Multi-Function CLI App
 
-The app is currently on Version 1.11.0.
+The app is currently on Version 1.11.1.
 
 If you like what you see, consider joining the Discord Server at this link: https://discord.gg/GxPxfjGAef
 
 **Termyx** is a lightweight, all-in-one command-line interface (CLI) application designed for quick, practical tasks directly from your terminal. Built with Python, Termyx offers a suite of tools for everyday productivity and learning exercises, all wrapped in a fun, retro-inspired interface.
 
-## What's New in 1.11.0
-
-- **Wheel Spinner** - Added a new tool for spinning between custom options in random or elimination mode.
-- **Calculator history** - The calculator now saves the last 5 answers in `config.json` and includes a dedicated `history (h)` command to view them on demand.
-- **Expanded Settings** - Settings now manage theme selection, saved Pomodoro defaults, and a 12-hour or 24-hour time format preference.
-- **Refreshed startup flow** - Termyx now opens with a cleaner splash screen, updated ASCII art, and a local date-and-time display.
-- **Quick-use tool flow** - Several tools now stay open until you choose to quit, instead of asking repetitive follow-up prompts after each action.
-- **Prompt and exit consistency** - User-facing prompts, spacing, and visible `quit (q)` guidance are more consistent across the app.
 
 ## Features
 - **Stopwatch** - Track elapsed time with start, stop, reset, and lap commands.
@@ -34,7 +26,7 @@ If you like what you see, consider joining the Discord Server at this link: http
 
 ## Calculator Functions
 
-The `1.11.0` calculator supports:
+The `1.11.1` calculator supports:
 
 - Operators: `+`, `-`, `*`, `/`, `**`, `//`, `%`
 - Functions: `abs()`, `round()`, `sqrt()`, `log()`, `ln()`, `sin()`, `cos()`, `tan()`
@@ -44,7 +36,7 @@ The `1.11.0` calculator supports:
 
 ## Settings
 
-The Settings menu in `1.11.0` includes:
+The Settings menu in `1.11.1` includes:
 
 - Theme selection
 - Saved Pomodoro defaults
@@ -75,54 +67,57 @@ Termyx is a good fit for learners, coders, and anyone who wants quick CLI utilit
 
 ## Prerequisites
 
-To run Termyx, you will need:
+If you are using the packaged Windows app:
+
+- **No separate Python installation is required** - `dist\Termyx.exe` includes what it needs to run.
+
+If you are running Termyx from source, you will need:
 
 - **Python 3.8+** - Download it from [python.org](https://www.python.org/downloads/).
 - **A terminal or command-line interface** - Command Prompt, PowerShell, Windows Terminal, or another terminal that can run Python scripts.
 - **`psutil` (optional)** - Only needed for the System Monitor tool.
 
-Install `psutil` if you want System Monitor support:
+Install `psutil` if you want System Monitor support when running from source:
 
 ```bash
 pip install psutil
 ```
 
 > **Note:** Termyx has been developed and tested primarily on **Windows 10+**. It should also work on macOS and Linux, but those platforms have not been tested as extensively.
-
-> **Note:** If `psutil` is not installed, the rest of the app still works normally.
+> **Note:** If `psutil` is not installed, the rest of the app still works normally when running from source.
 
 ## File Structure
 
-As of version `1.11.0`, Termyx uses the following layout:
+As of version `1.11.1`, Termyx uses the following layout:
 
 ```text
-Version_1.11.0-stable/
+Version_1.11.1-stable/
 |-- setup.ps1
 |-- shortcut.bat
-|-- termyx.bat
 |-- termyx.ico
-|-- termyx.sh
-`-- Termyx/
-    |-- README.md
-    |-- changelog.md
-    |-- main.py
-    `-- Tools/
-        |-- __init__.py
-        |-- calculator.py
-        |-- coin_flip.py
-        |-- colours.py
-        |-- config_store.py
-        |-- dice.py
-        |-- pom_tmr.py
-        |-- rng.py
-        |-- settings.py
-        |-- stopwatch.py
-        |-- system_monitor.py
-        |-- tally.py
-        |-- timer.py
-        |-- unit_conv.py
-        |-- updater.py
-        `-- wheelspin.py
+|-- README.md
+|-- changelog.md
+|-- main.py
+|-- Termyx.spec
+|-- build/
+|-- dist/
+`-- Tools/
+    |-- __init__.py
+    |-- calculator.py
+    |-- coin_flip.py
+    |-- colours.py
+    |-- config_store.py
+    |-- dice.py
+    |-- pom_tmr.py
+    |-- rng.py
+    |-- settings.py
+    |-- stopwatch.py
+    |-- system_monitor.py
+    |-- tally.py
+    |-- timer.py
+    |-- unit_conv.py
+    |-- updater.py
+    `-- wheelspin.py
 ```
 
 Notes:
@@ -131,13 +126,13 @@ Notes:
 - Each tool lives in its own module inside `Tools/`.
 - `config_store.py` manages the per-user config path and migration from older in-folder settings.
 - `settings.py` manages the settings menu, theme selection, Pomodoro defaults, and time format.
-- `termyx.bat` and `termyx.sh` are launcher scripts.
-- `setup.ps1` and `shortcut.bat` support Windows setup and shortcut creation.
+- `dist\Termyx.exe` is the packaged Windows app built with PyInstaller.
+- `setup.ps1` and `shortcut.bat` support Windows shortcut creation for the packaged app.
 
 ## How to Download
 
 1. Go to the **Termyx releases page**.
-2. Download the latest `Version_1.11.0-stable.zip` release.
+2. Download the latest `Version_1.11.1-stable.zip` release.
 3. Extract the archive to a location of your choice.
 4. Optionally install `psutil` if you want the System Monitor tool:
 
@@ -147,16 +142,9 @@ pip install psutil
 
 5. Launch the app using one of the following methods:
 
-- **Windows** - Double-click `termyx.bat`
-- **Windows shortcut setup** - Run `shortcut.bat` to create a desktop shortcut
-- **macOS / Linux** - Run `./termyx.sh` from your terminal
-- **Any platform** - Open the `Termyx/` folder and run `python main.py`
-
-If `termyx.sh` is not executable yet, run:
-
-```bash
-chmod +x termyx.sh
-```
+- **Windows packaged app** - Run `dist\Termyx.exe`
+- **Windows shortcut setup** - Run `shortcut.bat` to create a desktop shortcut for `dist\Termyx.exe`
+- **Source version** - Open this folder and run `python main.py`
 
 ## Additional Notes
 
@@ -175,7 +163,7 @@ Termyx uses semantic-style versioning:
 `MAJOR.MINOR.PATCH`
 
 Example:
-`1.11.0`
+`1.11.1`
 
 - **MAJOR** - Larger structural changes or major new features
 - **MINOR** - New tools, improvements, or visible feature upgrades
