@@ -1,5 +1,7 @@
 # Termyx - Multi-Function CLI App
 
+[![Github All Releases](https://img.shields.io/github/downloads/SS-YYC/Termyx/total.svg)]()
+
 The app is currently on Version 1.12.1.
 
 If you like what you see, consider joining the Discord Server at this link: https://discord.gg/GxPxfjGAef
