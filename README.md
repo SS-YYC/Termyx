@@ -1,7 +1,5 @@
 # Termyx - Multi-Function CLI App
 
-![GitHub Downloads (all assets, all releases)]
-
 The app is currently on Version 1.12.1.
 
 If you like what you see, consider joining the Discord Server at this link: https://discord.gg/GxPxfjGAef
