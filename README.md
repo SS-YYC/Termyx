@@ -1,6 +1,6 @@
 # Termyx - Multi-Function CLI App
 
-[![Github All Releases](https://img.shields.io/github/downloads/SS-YYC/Termyx/total.svg)]()
+[![Github All Releases](https://img.shields.io/github/Downloads/SS-YYC/Termyx/total.svg)]()
 
 The app is currently on Version 1.12.1.
 
